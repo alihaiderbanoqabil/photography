@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "RubikMedium";
+            text-decoration: none !important;
+            color: #fff;
+        }
+
+        @font-face {
+            font-family: "RubikMedium";
+            src: url("assets/fonts/Rubik-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: "RubikBlack";
+            src: url("assets/fonts/Rubik-Black.ttf");
+        }
+
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 0;
+            position: fixed;
+            width: 100% !important;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        header nav ul,
+        header nav {
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            transition: all 1s;
+        }
+
+        header nav ul li a:hover {
+            color: #f04e3c;
+        }
+
+        header nav>a,
+        #hero-section a {
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #f04e3c;
+            padding: 1.25rem 3rem;
+            cursor: pointer;
+        }
+
+        #hero-section {
+            background-color: #0E0E0E;
+            height: 100vh;
+        }
+
+        #hero-section #bg-image {
+            background-image: url("https://preview.colorlib.com/theme/myphotography/assets/img/hero/hero_man1.png");
+            height: 100vh;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hero-section h1,
+        #how-we-make h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #fff;
+            margin: 3rem 0;
+        }
+
+        #hero-section p {
+            color: #f04e3c;
+            text-transform: uppercase;
+        }
+
+        #content-container div {
+            width: 65%;
+        }
+
+        #how-we-make {
+            background-color: #121212;
+            padding: 10rem 0;
+        }
+
+        #how-we-make #hire {
+            color: #f04e3c;
+            border-bottom: 1px solid #f04e3c;
+            padding-bottom: 0.5rem;
+        }
+
+        #how-we-make p {
+            margin: 0;
+        }
+
+        #experience {
+            font-size: 5.5rem;
+            margin-right: 1rem !important;
+        }
+
+        #services {
+            background-color: #0E0E0E;
+            padding: 10rem 0;
+        }
+
+        .service-card:hover img {
+            transition: all 1s;
+        }
+
+        .service-card .image-container {
+            overflow: hidden;
+        }
+
+        .service-card:hover img {
+            transform: scale(1.5, 1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="container">
+        <div>
+            <img src="https://preview.colorlib.com/theme/myphotography/assets/img/logo/logo.png" alt="Photography">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="/contact.html"> Contact Us </a>
+        </nav>
+    </header>
+    <!-- hero -->
+    <section id="hero-section">
+        <div class="row w-100">
+            <div class="col-6 d-flex justify-content-center align-items-center" id="content-container">
+                <div>
+                    <p class="m-0">Creative Photography</p>
+                    <h1>Photography Make us happy Take a shot.</h1>
+                    <a href="/contact.html"> Contact Us </a>
+                </div>
+            </div>
+            <div class="col-6 p-0">
+                <div id="bg-image"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- how we make  -->
+    <section id="how-we-make">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 ml-5">
+                    <div>
+                        <h1>HOW WE MAKE USER EXPERIENCES</h1>
+                        <a href="#" id="hire"> hire@colorlib.com </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="w-75">You can’t use up creativity. The more you use, the more you have in your signifant
+                        mind.</p>
+
+                    <div class="my-4">
+                        <p>SALVADOR DALI</p>
+                        <p>Digital Artisit</p>
+                    </div>
+                    <div class="d-flex align-items-center w-50">
+                        <p id="experience">05</p>
+                        <p>YEARS OF
+                            DIGITAL EXPERIENCE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="service-card">
+                        <div class="image-container">
+                            <a href="#"> <img class="w-100"
+                                    src="https://preview.colorlib.com/theme/myphotography/assets/img/gallery/blog01.png"
+                                    alt=""></a>
+                        </div>
+                        <h3 class="my-3">Creative Photography</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="service-card">
+                        <div class="image-container">
+                            <img class="w-100"
+                                src="https://preview.colorlib.com/theme/myphotography/assets/img/gallery/blog02.png"
+                                alt="">
+                        </div>
+                        <!-- <a href="#"> -->
+                        <h3 class="my-3">Creative Photography</h3>
+                        <!-- </a> -->
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="service-card">
+                            <div class="image-container">
+                                <img class="w-100"
+                                    src="https://preview.colorlib.com/theme/myphotography/assets/img/gallery/blog03.png"
+                                    alt="">
+                            </div>
+                            <h3 class="my-3">Creative Photography</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- gallery  -->
+    <!-- take a look  -->
+    <!-- testimonials -->
+    <!-- blog  -->
+    <!-- footer  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
